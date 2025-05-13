@@ -14,7 +14,6 @@ export const GET: APIRoute = async ({ params, request})=>{
     msg: 'Hola Abel',
     clientId
 }   
-
         return new Response(JSON.stringify(body), {
             status: 200,
         headers:{
@@ -27,7 +26,6 @@ export const GET: APIRoute = async ({ params, request})=>{
 export const POST: APIRoute = async ({ params, request})=>{
 
         const clientId = params.clientId ?? '';
-
 
     const selectUsers = await db.select().from(Clients).where(eq(Clients.id, +clientId));
 // console.log(selectUser); //Como devuelve un arreglo[] validamos
