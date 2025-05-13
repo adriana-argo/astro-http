@@ -5,22 +5,22 @@ import { db, Clients, eq } from 'astro:db';
 
 export const prerender = false;
 
-export const GET: APIRoute = async ({ params, request})=>{
-    const clientId = params.clientID;
+// export const GET: APIRoute = async ({ params, request})=>{
+//     const clientId = params.clientID;
 
    
-    const body ={
-    method: 'GET',
-    msg: 'Hola Abel',
-    clientId
-}   
-        return new Response(JSON.stringify(body), {
-            status: 200,
-        headers:{
-            'Content-Type': 'application/json',
-        }
-        });
-    } 
+//     const body ={
+//     method: 'GET',
+//     msg: 'Hola Abel',
+//     clientId
+// }   
+//         return new Response(JSON.stringify(body), {
+//             status: 200,
+//         headers:{
+//             'Content-Type': 'application/json',
+//         }
+//         });
+//     } 
 
 
 export const POST: APIRoute = async ({ params, request})=>{
