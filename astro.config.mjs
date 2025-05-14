@@ -15,7 +15,7 @@ import db from '@astrojs/db';
 export default defineConfig({
   site: 'https://example.com',
 
-  output: "static",
+  output: "server",
   // adapter: node({
   //   mode: 'standalone',
   // }),
