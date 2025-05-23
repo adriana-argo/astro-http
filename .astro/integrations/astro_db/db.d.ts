@@ -4,4 +4,8 @@ declare module 'astro:db' {
 		"Clients",
 		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Clients","primaryKey":true}},"name":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"name","collection":"Clients","primaryKey":false,"optional":false}},"age":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"age","collection":"Clients","primaryKey":false,"optional":false}},"isActive":{"type":"boolean","schema":{"optional":false,"unique":false,"deprecated":false,"name":"isActive","collection":"Clients"}}}
 	>;
+	export const Posts: import("@astrojs/db/runtime").Table<
+		"Posts",
+		{"id":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Posts","primaryKey":true}},"title":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"title","collection":"Posts","primaryKey":false,"optional":false}},"likes":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"likes","collection":"Posts","primaryKey":false,"optional":false}}}
+	>;
 }

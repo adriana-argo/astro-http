@@ -6,19 +6,27 @@
     "dev": "astro dev",
     "dev:remote": "astro dev --remote",
     "start": "astro dev",
-    "build": "astro build --remote",
+    "build": "npm run db:push && astro build --remote",
     "check": "astro check",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "db:push": "astro db push --remote"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/cloudflare": "^10.4.1",
-    "@astrojs/db": "^0.14.3",
-    "@astrojs/mdx": "^3.1.1",
-    "@astrojs/rss": "^4.0.6",
-    "@astrojs/sitemap": "^3.1.6",
-    "astro": "^4.10.3",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/cloudflare": "^12.5.3",
+    "@astrojs/db": "^0.14.14",
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.4.0",
+    "@astrojs/vue": "^5.0.13",
+    "astro": "^5.7.13",
+    "canvas-confetti": "^1.9.3",
+    "lodash.debounce": "^4.0.8",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/lodash.debounce": "^4.0.9"
   }
 }
