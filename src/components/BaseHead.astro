@@ -2,6 +2,10 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+<<<<<<< HEAD
+=======
+import { SITE_TITLE } from '../consts';
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
 
 interface Props {
 	title: string;
@@ -18,6 +22,16 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<<<<<<< HEAD
+=======
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title={SITE_TITLE}
+	href={new URL('rss.xml', Astro.site)}
+/>
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->

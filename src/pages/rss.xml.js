@@ -10,7 +10,11 @@ export async function GET(context) {
 		site: context.site,
 		items: posts.map((post) => ({
 			...post.data,
+<<<<<<< HEAD
 			link: `/blog/${post.slug}/`,
+=======
+			link: `/blog/${post.id}/`,
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
 		})),
 	});
 }

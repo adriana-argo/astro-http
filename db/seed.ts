@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { getCollection } from 'astro:content';
 import { Clients, db, Posts } from 'astro:db';
+=======
+import { Clients, db } from 'astro:db';
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
 
 // https://astro.build/db/seed
 export default async function seed() {
@@ -13,6 +17,7 @@ export default async function seed() {
     { id: 5, name: "Moises Gonzalez", age: 18, isActive:true },
     { id: 6, name: "Patricia Gonzalez", age: 26, isActive:false },
   ]);
+<<<<<<< HEAD
 
   const posts = await getCollection('blog');
 
@@ -24,6 +29,8 @@ export default async function seed() {
 
     }))
   )
+=======
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
   console.log('Seed executed');
   
 	// console.log(Clients);

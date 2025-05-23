@@ -1,7 +1,11 @@
 ---
 title: 'Markdown Style Guide'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+<<<<<<< HEAD
 pubDate: 'Jul 01 2022'
+=======
+pubDate: 'Jun 19 2024'
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
 heroImage: '/blog-placeholder-1.jpg'
 ---
 

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:remote": "astro dev --remote",
+<<<<<<< HEAD
     "start": "astro dev",
     "build": "npm run db:push && astro build --remote",
     "check": "astro check",
@@ -28,5 +29,18 @@
   "devDependencies": {
     "@types/canvas-confetti": "^1.9.0",
     "@types/lodash.debounce": "^4.0.9"
+=======
+    "build": "astro build --remote",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.5.2",
+    "@astrojs/db": "^0.14.14",
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.3.1",
+    "astro": "^5.7.10"
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
   }
 }

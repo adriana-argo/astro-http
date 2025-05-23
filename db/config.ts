@@ -9,6 +9,7 @@ const Clients = defineTable({
   }
 })
 
+<<<<<<< HEAD
 //?Control de los likes
 
 const Posts = defineTable({
@@ -18,11 +19,17 @@ const Posts = defineTable({
     likes: column.number(),
   }
 })
+=======
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
 
 // https://astro.build/db/config
 export default defineDb({
   tables: {
+<<<<<<< HEAD
     Clients,
     Posts
+=======
+    Clients
+>>>>>>> ba94768611a2cf2a7f4a3c16d72c726a9b51bf61
   }
 });
